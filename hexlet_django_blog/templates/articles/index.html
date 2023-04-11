@@ -8,5 +8,6 @@
           </a>    
         </h2>
         <div>{{ article.body|slice:":200" }}</div>
+        <p><a class="link" href="{% url 'articles_update' article.id %}">Обновить статью</a></p>
     {% endfor %}
 {% endblock %}
