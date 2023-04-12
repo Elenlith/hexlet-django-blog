@@ -3,5 +3,6 @@
 {% block content %}
      <h1>{{ article.name }}</h1>
     <div>{{ article.body }}</div>
-    <p><a class="link" href="{% url 'articles_update' article.id %}">Обновить статью</a></p>
+    <a class="link" href="{% url 'articles_update' article.id %}">Обновить статью</a>
+    <a class="link" href="{% url 'articles_destroy' article.id %}" rel="nofollow">Удалить статью</a>
 {% endblock %}
