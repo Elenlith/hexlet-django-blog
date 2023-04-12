@@ -22,6 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('article/', include('hexlet_django_blog.article.urls')),
     path('about/', views.about),
-    #path('', HomePageView.as_view()),
-    path('', views.make_redirect),
+    path('', HomePageView.as_view()),
+    #path('', views.make_redirect),
 ]

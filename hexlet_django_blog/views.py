@@ -13,16 +13,8 @@ class HomePageView(TemplateView):
         return context
 
 def make_redirect(request):
-    return redirect(reverse('article', kwargs = {'tags':'python', 'article_id':42}))
+    return redirect(reverse('article', kwargs = {'article_id':1}))
 
-
-#def index(request):
-#    return render(request, 'index.html', context={
-#        'who': 'World',
-#    })
-
-#def about(request):
-#    return render(request, 'about.html')
 
 def about(request):
     tags = ['обучение', 'программирование', 'python', 'oop']
